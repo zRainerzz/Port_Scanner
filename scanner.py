@@ -124,3 +124,6 @@ except KeyboardInterrupt: #that means it will be stopped if we press CTRL + C
     print(bcolors.YELLOW + "\n Exiting program. ˙◠˙")
     sys.exit()
     
+except socket.error:
+    print(bcolors.YELLOW + "We could not connect to server.")
+    sys.exit()
